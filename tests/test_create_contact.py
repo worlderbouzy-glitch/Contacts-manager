@@ -4,12 +4,7 @@ from use_cases.create_contact import CreateContact
 
 
 class FakeRepository:
-    """
-    Yon 'fo' repository ki sèvi sèlman pandan tès yo.
-    Li imite ContactRepositoryImpl la, men li travay sèlman
-    an memwa -- li pa touche fichye contacts.json reyèl la.
-    """
-
+   
     def __init__(self):
         self.contacts = []
 
@@ -26,7 +21,7 @@ class FakeRepository:
 class TestCreateContact(unittest.TestCase):
 
     def setUp(self):
-        # Egzekite anvan CHAK tès: nou repati ak yon repository tou nèf
+       
         self.repository = FakeRepository()
         self.create_contact = CreateContact(self.repository)
 

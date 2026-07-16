@@ -1,10 +1,5 @@
 class ContactPresenter:
-    """
-    Responsablite sèl klas sa a: transfòme yon kontak (oswa yon lis kontak)
-    an tèks ki pare pou afiche nan tèminal la.
-    Li pa touche lojik biznis, ni done yo -- se sèlman "prezantasyon".
-    """
-
+   
     @staticmethod
     def show_contact(contact):
         print("----------------")
