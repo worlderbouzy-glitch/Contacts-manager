@@ -1,4 +1,10 @@
+
+from os import name
+
+from frameworks.config import MIN_NAME_LENGTH
+
 class Contact:
+
 
     def __init__(self, contact_id, name, phone, email):
 
